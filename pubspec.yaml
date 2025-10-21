@@ -4,7 +4,10 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.8.1
+  # Versión del SDK ajustada para reflejar una versión compatible y moderna de Dart.
+  # El error original sugiere un SDK más antiguo, pero si estás usando dependencias recientes,
+  # es mejor usar una versión estable de la rama 3.x.
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
@@ -25,6 +28,8 @@ dependencies:
   
   # UI
   cupertino_icons: ^1.0.8
+  # AÑADIDO: Paquete requerido para la funcionalidad Slidable (deslizar para acciones)
+  flutter_slidable: ^3.0.1 
 
   # Logger for logging
   logger: ^1.1.0
@@ -35,7 +40,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^2.0.0 # Versión ajustada por ser más común con Flutter 3.x
 
 flutter:
   uses-material-design: true
